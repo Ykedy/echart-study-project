@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/* 声明字体*/
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+body {
+  background: url(../images/bg.jpg) no-repeat top center;
+  line-height: 1.15;
+}
+header {
+  height: 5.208vw;
+  background: url(../images/head_bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+header h1 {
+  font-size: 1.979vw;
+  color: #fff;
+  text-align: center;
+  line-height: 4.167vw;
+}
+header .showTime {
+  position: absolute;
+  top: 0;
+  right: 1.563vw;
+  text-align: center;
+  font-size: 1.042vw;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 3.906vw;
+}
+.mainbox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.521vw 0.521vw 0;
+}
+.mainbox .column {
+  flex: 3;
+}
+.mainbox .column:nth-child(2) {
+  flex: 5;
+}
+.mainbox .panel {
+  position: relative;
+  height: 16.146vw;
+  border: 0.052vw solid rgba(25, 186, 139, 0.17);
+  background: url(../images/line.png);
+  padding: 0 0.781vw 2.083vw;
+  margin-bottom: 0.781vw;
+}
+.mainbox .panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0.521vw;
+  height: 0.521vw;
+  border-top: 0.104vw solid #02a6b5;
+  border-left: 0.104vw solid #02a6b5;
+}
+.mainbox .panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 0.521vw;
+  height: 0.521vw;
+  border-top: 0.104vw solid #02a6b5;
+  border-right: 0.104vw solid #02a6b5;
+}
+.mainbox .panel .panel-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.mainbox .panel .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0.521vw;
+  height: 0.521vw;
+  border-bottom: 0.104vw solid #02a6b5;
+  border-left: 0.104vw solid #02a6b5;
+}
+.mainbox .panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0.521vw;
+  height: 0.521vw;
+  border-bottom: 0.104vw solid #02a6b5;
+  border-right: 0.104vw solid #02a6b5;
+}
+.mainbox .panel h2 {
+  height: 2.5vw;
+  line-height: 2.5vw;
+  text-align: center;
+  color: #fff;
+  font-size: 1.042vw;
+  font-weight: 400;
+}
+.mainbox .panel h2 a {
+  color: #fff;
+}
+.mainbox .panel .chart {
+  height: 12.5vw;
+}
+.mainbox .no {
+  background: rgba(101, 132, 226, 0.1);
+  padding: 0.781vw;
+}
+.mainbox .no .no-hd {
+  position: relative;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.mainbox .no .no-hd::before {
+  content: "";
+  position: absolute;
+  width: 1.563vw;
+  height: 0.521vw;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  top: 0;
+  left: 0;
+}
+.mainbox .no .no-hd::after {
+  content: "";
+  position: absolute;
+  width: 1.563vw;
+  height: 0.521vw;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  right: 0;
+  bottom: 0;
+}
+.mainbox .no .no-hd ul {
+  display: flex;
+}
+.mainbox .no .no-hd ul li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  height: 4.167vw;
+  line-height: 4.167vw;
+  font-size: 3.646vw;
+  color: #ffeb7b;
+  padding: 0.208vw 0;
+  font-family: electronicFont;
+  font-weight: bold;
+}
+.mainbox .no .no-hd ul li:first-child::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 0.052vw;
+  background: rgba(255, 255, 255, 0.2);
+  right: 0;
+  top: 25%;
+}
+.mainbox .no .no-bd ul {
+  display: flex;
+}
+.mainbox .no .no-bd ul li {
+  flex: 1;
+  height: 2.083vw;
+  line-height: 2.083vw;
+  text-align: center;
+  font-size: 0.938vw;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 0.521vw;
+}
+.mainbox .map {
+  position: relative;
+  height: 42.188vw;
+}
+.mainbox .map .chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 42.188vw;
+  width: 100%;
+}
+.mainbox .map .map1,
+.mainbox .map .map2,
+.mainbox .map .map3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26.979vw;
+  height: 26.979vw;
+  background: url(../images/map.png) no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.3;
+}
+.mainbox .map .map2 {
+  width: 33.49vw;
+  height: 33.49vw;
+  background-image: url(../images/lbx.png);
+  opacity: 0.6;
+  animation: rotate 15s linear infinite;
+  z-index: 2;
+}
+.mainbox .map .map3 {
+  width: 29.479vw;
+  height: 29.479vw;
+  background-image: url(../images/jt.png);
+  animation: rotate1 10s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
